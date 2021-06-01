@@ -1,0 +1,76 @@
+\documentclass[11pt,a4paper,sans,english]{moderncv} %
+\moderncvstyle{casual} % style  'casual' (default), 'classic', 'oldstyle' dan 'banking'
+\moderncvcolor{purple} % color 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage[scale=0.75,a4paper]{geometry}
+\usepackage{babel}
+%----------------------------------------------------------------------------------
+%            personal data
+%----------------------------------------------------------------------------------
+\firstname{Abd Munim}
+\familyname{Abd Halim}
+\title{Resume}                               % optional, remove/comment the line if not wanted
+\address{Lot 3148, Jln Limbong, Kg Telaga Mas}{23100, Paka}{Terengganu, Malaysia}         % optional, remove/comment the line if not wanted; the "country" arguments can be omitted or provided empty
+\mobile{+60137737567}                          % optional, remove/comment the line if not wanted
+\phone{phone number}                           % optional, remove/comment the line if not wanted
+\fax{fax number}                             % optional, remove/comment the line if not wanted
+\email{muim$\_$halim@yahoo.com}                               % optional, remove/comment the line if not wanted
+\homepage{test.name.my}                         % optional, remove/comment the line if not wanted
+\extrainfo{additional information}                 % optional, remove/comment the line if not wanted
+\photo[64pt][0.4pt]{gambar1.jpg}                       % optional, uncomment the line if wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{some quote}                                 % optional, remove/comment the line if not wanted
+%
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\section{Education}
+\cventry{2018--2021}{Master}{UniKL MFI}{Bangi}{In Study}{Master of Engineering Technology (Mechanical)}  % arguments 3 to 6 can be left empty
+\cventry{2013--2017}{Degree}{UniKL MSI}{Kulim}{CGPA 3.0}{Bachelor of Engineering Technology in Mechanical (Automotive)}
+\section{Degree thesis}
+\cvitem{title}{CFD Ahmed Body Large Eddy Simulation}
+\cvitem{supervisors}{Dr. Muhamad Husaini Abu Bakar}
+\cvitem{description}{Using opensource application named OpenFOAM with implementation of Large Eddy Simulation numerical analysis on Ahmed Body as benchmark of automotive body.}
+\section{Experience}
+\subsection{Vocational}
+\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines}
+\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines}
+\subsection{Miscellaneous}
+\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines}
+\section{Languages}
+\cvitemwithcomment{Language 1}{Skill level}{Comment}
+\cvitemwithcomment{Language 2}{Skill level}{Comment}
+\cvitemwithcomment{Language 3}{Skill level}{Comment}
+\section{Computer skills}
+\cvdoubleitem{Category 1}{Comment}{Category 4}{Comment}
+\cvdoubleitem{Category 2}{Comment}{Category 5}{Comment}
+\cvdoubleitem{Category 3}{Comment}{Category 6}{Comment}
+\section{Interests}
+\cvitem{Hobby 1}{Description}
+\cvitem{Hobby 2}{Description}
+\cvitem{Hobby 3}{Description}
+\section{Extra 1}
+\cvlistitem{Item 1}
+\cvlistitem{Item 2}
+\cvlistitem{Item 3}
+\section{Extra 2}
+\cvlistdoubleitem{Item 1}{Item 4}
+\cvlistdoubleitem{Item 2}{Item 5}
+\cvlistdoubleitem{Item 3}{Item 6}
+\section{References}
+\begin{cvcolumns}
+  \cvcolumn{Category 1}{Comment}
+  \cvcolumn{Category 2}{Comment}
+  \cvcolumn{Category 3}{Comment}
+\end{cvcolumns}
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Company Recruitment team}{Company's name\\Street address\\Zip Code City}
+\date{Date}
+\opening{Dear Sir or Madam,}
+\closing{Yours faithfully,}
+\enclosure{enclosures}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+\makeletterclosing
+\end{document}
